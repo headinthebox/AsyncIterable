@@ -16,6 +16,8 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="scala-library" level="application" />
+    <orderEntry type="library" name="com.netflix.rxjava:rxjava-core:0.15.0" level="application" />
+    <orderEntry type="library" name="RxJava 0.15.0" level="application" />
   </component>
 </module>
 
