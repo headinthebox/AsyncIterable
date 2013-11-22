@@ -1,4 +1,3 @@
-
 /*
  * Copyright 2013 Applied Duality, Inc.
  *
@@ -16,27 +15,10 @@
  *
  */
 
-package rx.lang.scala
+package rx.lang
 
-import scala.concurrent.{ExecutionContext, Future}
-import scala.async.Async._
+package object scala {
+  implicit class Extensions[T](val source: Observable[T]) extends AnyVal {
 
-object ObservableIterable {
-
-  def apply[T](body: =>()=>Future[Option[T]])(implicit scheduler : Scheduler): ObservableIterable[T] = {
-    ???
   }
 }
-
-trait ObservableIterable[+T] {
-  def iterator: AsyncIterator[T]
-}
-
-trait ObservableIterator[+T] {
-
-  def next: T
-  def hasNext(): Observable[Boolean]
-
-}
-
-
